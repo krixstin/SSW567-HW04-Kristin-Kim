@@ -39,7 +39,7 @@ class RepoCommit(i,username,repoName):
     url2 = f"https://api.github.com/repos/{username}/{repoName}/commits"
     commits = len(requests.get(url2).json())
     cl="Repo: "+repo[i]['name']+"Number of commits: "+str(commits)
-    # return cl
+    return cl
 
 class TestRepoCommit(unittest.TestCase):
     # define multiple sets of tests as functions with names that begin
