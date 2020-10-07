@@ -39,26 +39,20 @@ def RepoCommit(p):
     # print("5st", list[5])
     return list[p]
 
-print (RepoCommit(0),"ddd")
 # print (RepoCommit(1))
 # print (RepoCommit(2))
 # print (RepoCommit(3))
 # print (RepoCommit(4))
 
-class test_repo_commit(unittest.TestCase):
+class Test_Repo_Commit(unittest.TestCase):
     # define multiple sets of tests as functions with names that begin
 
     def RepoCommit(self):
         self.assertEqual(RepoCommit(0),'Repo:  githit Number of commits:  1', "first repo/commit chekced")
-    def RepoCommit(self):
         self.assertEqual(RepoCommit(1),'Repo:  helloworld Number of commits:  2', "second repo/commit chekced")
-    def RepoCommit(self):
         self.assertEqual(RepoCommit(2),'Repo:  kushal1223 Number of commits:  11', "third repo/commit chekced")
-    def RepoCommit(self):
         self.assertEqual(RepoCommit(3),'Repo:  Runge-Kutta-Fehlberg Number of commits:  1', "forth repo/commit chekced")
-    def RepoCommit(self):
         self.assertEqual(RepoCommit(4),'Repo:  SSW567-HW02-Kristin-Kim Number of commits:  6', "fifth repo/commit chekced")
-    def RepoCommit(self):
         self.assertEqual(RepoCommit(5),'Repo:  SSW567-HW04-Kristin-Kim Number of commits:  8', "sixth repo/commit chekced")
 
 if __name__ == '__main__':
