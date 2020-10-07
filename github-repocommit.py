@@ -56,4 +56,8 @@ class Test_Repo_Commit(unittest.TestCase):
         self.assertEqual(RepoCommit(5),'Repo:  SSW567-HW04-Kristin-Kim Number of commits:  8', "sixth repo/commit chekced")
 
 if __name__ == '__main__':
+<<<<<<< HEAD
     unittest.main()
+=======
+    unittest.main()
+>>>>>>> origin
